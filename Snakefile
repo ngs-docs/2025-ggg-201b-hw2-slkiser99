@@ -1,7 +1,12 @@
 rule all:
-    input:
-        "SRR2584857_quast.4000000",
-        "SRR2584857_annot.4000000",
+   input:
+        "SRR2584857_quast.2700000", # 60X coverage
+        "SRR2584857_annot.2700000",
+        "SRR2584857_quast.1350000", # 30X coverage
+        "SRR2584857_annot.1350000",
+        "SRR2584857_quast.90000", # 2X coverage
+        "SRR2584857_annot.90000",
+
 
 rule subset_reads:
     input:
